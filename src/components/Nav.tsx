@@ -15,6 +15,7 @@ export default function Nav() {
         <nav className="hidden items-center gap-8 text-sm text-[var(--dim)] md:flex">
           <Link href="/#services" className="hover:text-[var(--ink)]">Services</Link>
           <Link href="/#process" className="hover:text-[var(--ink)]">Process</Link>
+          <Link href="/#work" className="hover:text-[var(--ink)]">Work</Link>
           <Link href="/#proof" className="hover:text-[var(--ink)]">Status</Link>
           <Link href="/#contact" className="hover:text-[var(--ink)]">Contact</Link>
         </nav>

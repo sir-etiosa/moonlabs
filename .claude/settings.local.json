@@ -31,7 +31,8 @@
       "Bash(curl -s http://localhost:3000/)",
       "Bash(curl -s http://localhost:3000/product-rescue)",
       "Bash(curl -s \"http://localhost:3000/opengraph-image?970d90c582539fc4\" -o \"C:\\\\Users\\\\user\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-user-Documents-iyeres\\\\142f323d-4e62-4948-8536-b2353c3fc391\\\\scratchpad\\\\og-preview.png\")",
-      "Bash(powershell -Command \"Stop-Process -Id 18644,12892,13020,15384 -Force -ErrorAction SilentlyContinue\")"
+      "Bash(powershell -Command \"Stop-Process -Id 18644,12892,13020,15384 -Force -ErrorAction SilentlyContinue\")",
+      "Bash(git commit *)"
     ]
   }
 }

@@ -1,6 +1,7 @@
 import CTAButton from "@/components/CTAButton";
 import ServiceCard from "@/components/ServiceCard";
 import ProcessSteps from "@/components/ProcessSteps";
+import CaseStudies from "@/components/CaseStudies";
 import ProofSection from "@/components/ProofSection";
 import ContactSection from "@/components/ContactSection";
 import { contact, services } from "@/lib/config";
@@ -109,6 +110,7 @@ export default function Home() {
         </div>
       </section>
 
+      <CaseStudies />
       <ProofSection />
       <ContactSection />
     </>

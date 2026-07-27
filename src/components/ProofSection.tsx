@@ -3,16 +3,16 @@ import { contact } from "@/lib/config";
 
 const proof = [
   {
-    label: "Systems background",
-    detail: "C, C++, and Rust across embedded, backend, and performance-critical code.",
+    label: "Track record",
+    detail: "13+ web3 products and MVPs shipped, most under NDA or built stealth-mode for founders pre-launch.",
   },
   {
-    label: "Full-stack range",
-    detail: "Web, mobile, and SaaS products shipped end to end, not just prototypes.",
+    label: "Cross-domain",
+    detail: "Web3 is the core, but the same engineering has shipped for agriculture and wellness/health products too.",
   },
   {
-    label: "Web3-native",
-    detail: "Smart contracts and the infrastructure around them, built with security as a first-class concern.",
+    label: "Systems + full-stack",
+    detail: "C, C++, and Rust for the hard parts; web, mobile, and SaaS for everything built on top.",
   },
 ];
 
@@ -21,13 +21,11 @@ export default function ProofSection() {
     <section id="proof" className="mx-auto max-w-6xl px-6 py-20">
       <h2 className="mono-label text-[var(--dim)]">Status</h2>
       <p className="log-line mt-4">
-        &gt; checking case-study archive<span className="tag">...</span>{" "}
-        <span className="tag">empty</span> &mdash; studio newly public
+        &gt; checking availability<span className="tag">...</span> <span className="ok">done</span>
       </p>
       <p className="mt-4 max-w-2xl text-[var(--ink)]">
-        This studio is newly public, so the case-study wall is still being built &mdash; that&apos;s the
-        honest version. What you get in the meantime is direct access to the engineer doing the
-        work, not an account manager relaying to one.
+        What you get is direct access to the engineer who did the work above, not an account
+        manager relaying to one.
       </p>
 
       <div className="mt-10 grid gap-6 md:grid-cols-3">
