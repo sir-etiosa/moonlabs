@@ -67,7 +67,7 @@ export default function Home() {
           </div>
 
           <div className="title-block mt-10 flex flex-wrap justify-between gap-2 border-t border-dashed border-[var(--border)] pt-4">
-            <span>Dwg. Kings-Lab-01</span>
+            <span>Dwg. Moon-Labs-01</span>
             <span>Scale: 1:1</span>
             <span>Rev. A</span>
           </div>
