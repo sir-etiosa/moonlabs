@@ -11,7 +11,7 @@ const cases = [
     title: "Merchant Payment Rail (Stablecoins)",
     engagement: "New build",
     scope: ["Frontend", "Backend", "Blockchain layer", "Mobile app", "DevOps"],
-    outcome: "Full stack owned end to end, one engineer",
+    outcome: "Full stack owned end to end",
   },
   {
     domain: "Wellness / Web3",
