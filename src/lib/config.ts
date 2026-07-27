@@ -2,7 +2,8 @@
 export const site = {
   brand: "Moon Labs",
   tagline: "Senior systems engineering for products that can't afford to break.",
-  domain: "moonlabs.dev", // REPLACE_ME with your real domain once purchased
+  domain: "www.moonlabs.store",
+  url: "https://www.moonlabs.store",
 };
 
 export const contact = {

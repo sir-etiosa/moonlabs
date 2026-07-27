@@ -5,7 +5,7 @@ import { services } from "@/lib/config";
 const service = services.find((s) => s.slug === "web3-hardware")!;
 
 export const metadata: Metadata = {
-  title: `${service.name} — Kings Lab`,
+  title: service.name,
   description: service.short,
 };
 
