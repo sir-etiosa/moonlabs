@@ -1,26 +1,109 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #040d20;
+  --grid-line: rgba(130, 170, 255, 0.04);
+  --border: rgba(140, 175, 235, 0.22);
+  --gold: #f7c948;
+  --gold-ink: #0d1730;
+  --ink: #eaf1fc;
+  --dim: #8892b8;
+  --ok: #7fae86;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--bg);
+  --color-foreground: var(--ink);
+  --color-gold: var(--gold);
+  --color-dim: var(--dim);
+  --color-ok: var(--ok);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+body {
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 32px 32px;
+  color: var(--ink);
+}
+
+/* Blueprint-frame panel: bordered box with gold corner registration marks. */
+.bp-frame {
+  position: relative;
+  border: 1px solid var(--border);
+  background: rgba(6, 14, 32, 0.6);
+}
+.bp-frame::before,
+.bp-frame::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  pointer-events: none;
+}
+.bp-frame::before {
+  top: -1px;
+  left: -1px;
+  border-top: 2px solid var(--gold);
+  border-left: 2px solid var(--gold);
+}
+.bp-frame::after {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 2px solid var(--gold);
+  border-right: 2px solid var(--gold);
+}
+
+/* Uppercase, letter-spaced monospace label used for tags and data keys. */
+.mono-label {
+  font-family: var(--font-geist-mono), ui-monospace, "SF Mono", Consolas, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* Terminal-style status/diagnostic line, e.g. "> scanning... done" */
+.log-line {
+  font-family: var(--font-geist-mono), ui-monospace, "SF Mono", Consolas, monospace;
+  font-size: 0.8rem;
+  color: var(--dim);
+  line-height: 1.9;
+}
+.log-line .ok {
+  color: var(--ok);
+}
+.log-line .tag {
+  color: var(--gold);
+}
+
+.cursor-blink {
+  display: inline-block;
+  width: 0.5em;
+  height: 1em;
+  background: var(--gold);
+  vertical-align: text-bottom;
+  margin-left: 2px;
+  animation: bp-blink 1s steps(1) infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .cursor-blink {
+    animation: none;
+  }
+}
+@keyframes bp-blink {
+  50% {
+    opacity: 0;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Title-block footer strip, styled like the revision block on a technical drawing. */
+.title-block {
+  font-family: var(--font-geist-mono), ui-monospace, "SF Mono", Consolas, monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dim);
 }

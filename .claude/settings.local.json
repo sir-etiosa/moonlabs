@@ -2,7 +2,24 @@
   "permissions": {
     "allow": [
       "Bash(npm -v)",
-      "Bash(npx --yes create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack)"
+      "Bash(npx --yes create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack)",
+      "Bash(npm run *)",
+      "Bash(curl -s \"http://localhost:3000/\")",
+      "Artifact",
+      "Bash(where magick *)",
+      "Bash(where convert *)",
+      "Bash(where ffmpeg *)",
+      "Bash(cp \"src/app/assets/moonlabs.png\" \"src/app/icon.png\")",
+      "Bash(rm \"src/app/favicon.ico\")",
+      "Bash(disown)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/)",
+      "Bash(kill %1)",
+      "Bash(jobs)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/ --max-time 2)",
+      "Bash(powershell -Command \"Get-CimInstance Win32_Process -Filter \\\\\"name='node.exe'\\\\\" | Select-Object ProcessId,CommandLine\" 2>&1)",
+      "Bash(powershell -Command \"Stop-Process -Id 8572,12228,7412,11092 -Force -ErrorAction SilentlyContinue\")",
+      "Bash(git ls-remote *)",
+      "Bash(git add *)"
     ]
   }
 }
